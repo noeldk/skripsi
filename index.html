@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Klabat University Information Systems</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+	</head>
+	<body>
+    	<div data-role="page" id="loginpage">  
+            <div data-position="fixed" data-role="header" data-theme="b">
+				<h4>UNIVERSITAS KLABAT</h4>
+            </div>  
+            <div data-role="content" id="frmlogin" name="contentConfirmation" align="center">  
+                <h3> Student Login</h3>
+                <div id="error"></div>
+                <form id="formlogin" name="formlogin" method="POST"> 
+					<div data-role="fieldcontain">  
+					<label>Username: </label> 
+                    <input class="required" id="username" name="username" value="" type="text" placeholder="Username">            
+                    </div>
+                    <div data-role="fieldcontain">  
+                    <label>Password: </label>  	
+                        <input id="password" name="password" value="" type="password" placeholder="Password">            
+                    </div>  
+                    <div class="ui-grid-solo"> 
+                    	
+                    		<div class="ui-block-a">  
+                    			<button data-theme="b" type="submit" id="login">Login</button>
+                            </div>  
+                    	
+                    </div>  
+                </form>
+        	</div>  <!-- Content -->
+            <div data-role="footer" data-theme="b">
+            <div class="ui-bar" align="center">
+            		
+             		<a onclick="window.open('https://www.facebook.com/pages/UNKLAB-Official/238551992863485?fref=ts','_system','location=yes');"><img src="images/facebook.png"/> Join with us </a>
+                    
+                    <a onclick="window.open('https://twitter.com/unklabofficial','_system','location=yes');"><img src="images/twitter.png"/>Follow us</a>
+                    
+           	</div>
+       	</div>
+        </div> <!-- Page -->
+        
+	</body>
+</html>
